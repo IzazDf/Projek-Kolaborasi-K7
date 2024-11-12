@@ -1,6 +1,6 @@
 # Judul
 
-[Status Build](https://img.shields.io/badge/build-In_Progress-brightgreen) ![Lisensi](https://img.shields.io/badge/license-MIT-blue)
+![Status Build](https://img.shields.io/badge/build-In_Progress-brightgreen) ![Lisensi](https://img.shields.io/badge/license-MIT-blue)
 
 Proyek ini merupakan pengembangan program konversi nilai satuan hambatan atau resistansi yang dikemas dalam bentuk aplikasi berbasis web. Pengembangan program ini dimaksudkan untuk mempermudah
 pengguna dalam melakukan konversi antar satuan hambatan atau resistansi. Nantinya program ini diharapkan dapat mempermudah banyak orang dalam melakukan konversi, sekaligus meningkatkan efisiensi
