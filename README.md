@@ -1,10 +1,8 @@
-# Judul
+# Aplikasi Konversi Nilai Hambatan atau Resistansi Berbasis Website
 
 ![Status Build](https://img.shields.io/badge/build-In_Progress-brightgreen) ![Lisensi](https://img.shields.io/badge/license-MIT-blue)
 
-Proyek ini merupakan pengembangan program konversi nilai satuan hambatan atau resistansi yang dikemas dalam bentuk aplikasi berbasis web. Pengembangan program ini dimaksudkan untuk mempermudah
-pengguna dalam melakukan konversi antar satuan hambatan atau resistansi. Nantinya program ini diharapkan dapat mempermudah banyak orang dalam melakukan konversi, sekaligus meningkatkan efisiensi
-dalam pekerjaan yang berkaitan.
+Proyek ini merupakan pengembangan program konversi nilai satuan hambatan atau resistansi yang dikemas dalam bentuk aplikasi berbasis web. Pengembangan program ini dimaksudkan untuk mempermudah pengguna dalam melakukan konversi antar satuan hambatan atau resistansi. Nantinya program ini diharapkan dapat mempermudah banyak orang dalam melakukan konversi, sekaligus meningkatkan efisiensi dalam pekerjaan yang berkaitan.
 
 ## Daftar Isi
 
@@ -18,9 +16,9 @@ dalam pekerjaan yang berkaitan.
 
 ## Fitur
 
-- Fitur 1
-- Fitur 2
-- Fitur 3
+- Konversi dari satu satuan tertentu ke satuan lain yang dapat dipilih sesuai kebutuhan pengguna
+- Konversi ke 3 satuan umum secara otomatis
+- Antarmuka pengguna yang mudah digunakan
 
 ## Prasyarat
 
@@ -37,7 +35,7 @@ Instruksi untuk menginstal proyek ini secara lokal. Misalnya:
    git clone https://github.com/IzazDf/Projek-Kolaborasi-K7.git
 
 ## Penggunaan
-Anda dapat mengakses setiap fitur langsung di halaman utama. Pastikan Anda telah mengaktifkan Live Server agar setiap perubahan yang dilakukan dapat langsung terlihat pada browser.
+Anda dapat mengakses setiap fitur langsung di halaman utama (main). Pastikan Anda telah mengaktifkan Live Server agar setiap perubahan yang dilakukan dapat langsung terlihat pada browser.
 
 ## Kontribusi
 Kami mengundang kontribusi dari siapa saja. Silakan ikuti langkah berikut untuk memulai:
