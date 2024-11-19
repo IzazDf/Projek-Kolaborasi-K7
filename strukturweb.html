@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Konversi Satuan</title>
-</head>
-
-<head>
+    <nav>
+        <a href="Membuat-struktur-web.html">Home</a>
+        <a href="about.html">About</a> 
+    </nav>
     <h1>Kalkulator Konversi Satuan Hambatan</h1>
-</head>
+</header>
 
 <body>
     <main>
-        <div class="container">
+        <div class="container1">
             <div class="form-group">
                 <label for="awal">Pilih Satuan Asal</label>
                 <select id="awal">
@@ -47,28 +48,20 @@
         </div>
 
         <div class="input">
-            <div id="nilai">
-                <input type="number" placeholder="Masukan nilai">
-            </div>
+            <input type="number" id="input" placeholder="Masukan nilai" required>
         </div>
 
         <div class="button">
-            <button type="submit" onclick="konversi()">submit</button>
+            <button type="button" onclick="konversi()">Konversi</button>
         </div>
 
         <div class="hasil">
-            <div id="hasilkonversi">
-                <p>hasil</p>
-            </div>
+            <p id="hasilkonversi">Hasil</p>
         </div>
-
     </main>
+    
+    <footer>
+        <p>&copy; 2024 Kalkulator Konversi</p>
+    </footer>
 </body>
-
-<footer>
-
-    <p>&copy; 2024 Kalkulator Konversi</p>
-
-</footer>
-
 </html>
