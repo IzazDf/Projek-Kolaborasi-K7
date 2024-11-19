@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> //perubahan
+<html lang="id">
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Kalkulator Konversi Satuan</title>
+    <nav>
+        <a href="Membuat-struktur-web.html">Home</a>
+        <a href="about.html">About</a> 
+    </nav>
+    <h1>Kalkulator Konversi Satuan Hambatan</h1>
+</header>
+
 <body>
+    <main>
+        <div class="container1">
+            <div class="form-group">
+                <label for="awal">Pilih Satuan Asal</label>
+                <select id="awal">
+                    <option value="1">Tera ohm (TΩ)</option>
+                    <option value="2">Giga ohm (GΩ)</option>
+                    <option value="3">Mega ohm (MΩ)</option>
+                    <option value="4">Kilo ohm (KΩ)</option>
+                    <option value="5">ohm (Ω)</option>
+                    <option value="6">mili ohm (mΩ)</option>
+                    <option value="7">mikro ohm (μΩ)</option>
+                    <option value="8">nano ohm (nΩ)</option>
+                    <option value="9">pico ohm (pΩ)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="form-group">
+                <label for="akhir">Pilih Satuan Akhir</label>
+                <select id="akhir">
+                    <option value="1">Tera ohm (TΩ)</option>
+                    <option value="2">Giga ohm (GΩ)</option>
+                    <option value="3">Mega ohm (MΩ)</option>
+                    <option value="4">Kilo ohm (KΩ)</option>
+                    <option value="5">ohm (Ω)</option>
+                    <option value="6">mili ohm (mΩ)</option>
+                    <option value="7">mikro ohm (μΩ)</option>
+                    <option value="8">nano ohm (nΩ)</option>
+                    <option value="9">pico ohm (pΩ)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input">
+            <input type="number" id="input" placeholder="Masukan nilai" required>
+        </div>
+
+        <div class="button">
+            <button type="button" onclick="konversi()">Konversi</button>
+        </div>
+
+        <div class="hasil">
+            <p id="hasilkonversi">Hasil</p>
+        </div>
+    </main>
     
+    <footer>
+        <p>&copy; 2024 Kalkulator Konversi</p>
+    </footer>
 </body>
 </html>
