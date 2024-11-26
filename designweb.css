@@ -1,6 +1,267 @@
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #333333; 
 }
+
+/* Navigasi */
+nav {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 3px;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px white solid;
+    border-radius: 2em;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #333333;
+}
+
+header {
+    text-align: center;
+    margin-top: 90px;
+}
+
+header h1, main {
+    display: block;
+    width: 800px; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header h1 {
+    border: 2px solid white;
+    border-radius: 0.6em;
+    background-color: white;
+    font-family: "Alexandria", sans-serif;
+    color: #333333;
+    font-size: 2.13em;
+    margin-bottom: 30px;
+}
+
+main {
+    border: 2px solid white;
+    border-radius: 1.2em;
+    background-color: white;
+    padding-top: 56px;
+}
+
+.menuoption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: inline-block;
+    justify-content: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+select {
+    padding-bottom: 5.8px;
+}
+
+option {
+    display: block;
+    text-align: left;
+    text-align-last: right;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+select option:hover {
+    border: 2px solid #333333;
+    background-color: #fff;
+}
+
+input, output {
+    font-family: "Gentium Plus", serif;
+    font-size: 34px;
+    color: #171717;
+}
+
+/* Option satuan awal dan input nilai */
+.container1 {
+    display: flex;
+    align-items: center;
+    border: 2.5px solid #171717;
+    border-radius: 12px;
+    padding-left: 4px;
+    overflow: hidden;
+    width: 320px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+/*input nilai*/
+#angka {
+    width: 220px;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    padding-bottom: 16.8px;
+}
+
+#awal {
+    border: none;
+    outline: none;
+    font-family: "Gentium Plus", serif;
+    font-weight: 500;
+    font-size: 34px;
+    color: #171717;
+    margin-left: -10px;
+}
+
+.judul-awal {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #171717;
+    font-weight: 700;
+    position: absolute;
+    top: 210px;
+    left: 277px;
+}
+
+/*Gambar tanda panah*/
+.tandapanah {
+    position: absolute;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    top: 258px;
+    left: 612px;
+}
+
+/*Option pilihan akhir dan output hasil */
+.container2 {
+    display: flex;
+    align-items: center;
+    border: 2.5px solid #171717;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+#dipilih {
+    width: 220px;
+    font-family: "Gentium Plus" serif;
+    font-size: 28px;
+    color: #171717;
+    margin: 0;
+    margin-right: 48px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#akhir {
+    border: none;
+    outline: none;
+    font-family: "Gentium Plus", serif;
+    font-weight: 500;
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+.judul-akhir {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #171717;
+    font-weight: 700;
+    position: absolute;
+    top: 210px;
+    left: 666.8px;
+}
+
+.hasil {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.default, .lainnya {
+    display: flex;
+    font-family: "Gentium", serif;
+    font-size: 34px;
+    color: #171717;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.default p {
+    margin: 0;
+    position: relative;
+    left: 15px;
+}
+
+.jdllnnya {
+    font-family: "Gentium", serif;
+    font-weight: 700;
+    color: #171717;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    position: relative;
+    left: 14.6%;
+}
+
+.lainnya {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #171717;
+    padding-left: 7px;
+    line-height: 28px;
+    padding-top: 20px;
+    margin-top: 5px;
+    position: relative;
+    left: -87px;
+}
+
+.lainnya p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 90px;
+    padding: 10px;
+    background-color: #1c1c1c;
+    font-family: "Hanuman", serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
