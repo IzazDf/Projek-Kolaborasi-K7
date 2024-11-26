@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Hanuman:wght@100;300;400;700;900&family=Lateef&display=swap" rel="stylesheet">
+    <img class="tandapanah" src="https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right_2-1024.png" alt="tanda panah">
     <link rel="styesheet" href="designweb.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,67 +15,68 @@
 <body>
     <nav>
         <a href="home.html">Home</a>
-        <a href="about.html">About</a> 
+        <a href="About.html">About</a> 
     </nav>
     <header>
-         <h1>Kalkulator Konversi Satuan Hambatan</h1>
+         <h1>KALKULATOR KONVERSI SATUAN HAMBATAN</h1>
     </header>
     <main>
-        <div class="container1">
-            <div class="form-group">
-                <label for="awal">Pilih Satuan Asal</label>
-                <select id="awal">
-                    <option value="1">Tera ohm (TΩ)</option>
-                    <option value="2">Giga ohm (GΩ)</option>
-                    <option value="3">Mega ohm (MΩ)</option>
-                    <option value="4">Kilo ohm (KΩ)</option>
-                    <option value="5">ohm (Ω)</option>
-                    <option value="6">mili ohm (mΩ)</option>
-                    <option value="7">mikro ohm (μΩ)</option>
-                    <option value="8">nano ohm (nΩ)</option>
-                    <option value="9">pico ohm (pΩ)</option>
-                </select>
+        <div class="menuoption">
+            <div class="container1">
+                <p class="judul-awal">Masukan nilai</p>
+                <input type="text" inputmode="numeric" id="angka" required>
+                <div class="form-group">
+                    <select id="awal">
+                        <option value="1">TΩ</option>
+                        <option value="2">GΩ</option>
+                        <option value="3">MΩ</option>
+                        <option value="4">KΩ</option>
+                        <option value="5">Ω</option>
+                        <option value="6">mΩ</option>
+                        <option value="7">μΩ</option>
+                        <option value="8">nΩ</option>
+                        <option value="9">pΩ</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="container2">
+                <p class="judul-akhir">Konversi menjadi</p>
+                <output id="dipilih"></output>
+                <div class="form-group">
+                    <select id="akhir">
+                        <option value="1">TΩ</option>
+                        <option value="2">GΩ</option>
+                        <option value="3">MΩ</option>
+                        <option value="4">KΩ</option>
+                        <option value="5">Ω</option>
+                        <option value="6">mΩ</option>
+                        <option value="7">μΩ</option>
+                        <option value="8">nΩ</option>
+                        <option value="9">pΩ</option>
+                    </select>
+                </div>
             </div>
         </div>
 
-        <div class="container2">
-            <div class="form-group">
-                <label for="akhir">Pilih Satuan Akhir</label>
-                <select id="akhir">
-                    <option value="1">Tera ohm (TΩ)</option>
-                    <option value="2">Giga ohm (GΩ)</option>
-                    <option value="3">Mega ohm (MΩ)</option>
-                    <option value="4">Kilo ohm (KΩ)</option>
-                    <option value="5">ohm (Ω)</option>
-                    <option value="6">mili ohm (mΩ)</option>
-                    <option value="7">mikro ohm (μΩ)</option>
-                    <option value="8">nano ohm (nΩ)</option>
-                    <option value="9">pico ohm (pΩ)</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="input">
-            <input type="number" id="input" placeholder="Masukan nilai" required>
-        </div>
-
-        <div class="button">
+        <!--<div class="button">
             <button type="button" onclick="konversi()">Konversi</button>
-        </div>
+        </div>-->
 
         <div class="hasil">
             <div class="default">
-                <p id="dflt">nilai deafult</p>
+                <p id="dflt">2 TΩ = 2000 MΩ</p>
             </div>
+
+            <p class"jdllnnya">Hasil konversi lainnya</p>
             <div class="lainnya">
-                <p>Hasil konversi lainnya</p>
+                <p id="mega">2 TΩ = 2000 MΩ</p>
+                <p id="ohm">2 TΩ = 2000 MΩ</p>
+                <p id="mikro">2 TΩ = 2000 MΩ/p>
             </div>
-            <p id="dipilih">dipilih</p>
-            <p id="mega">hasil dalam mega</p>
-            <p id="ohm">hasil dalam ohm</p>
-            <p id="mikro">hasil dalam mikro</p>
         </div>
     </main>
+    
     <footer>
         <p>&copy; 2024 Kalkulator Konversi</p>
     </footer>
