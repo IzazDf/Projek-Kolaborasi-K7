@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg'); 
+    background-size: cover; 
+    width: 100%;
+    height: auto;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+header {
+    display: flex;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+}
+
+header h1 {
+    border-bottom: 2px solid white;
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.team-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.team-member {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tech-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tech-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 90px;
+    padding: 10px;
+    background-color: rgb(27, 27, 27);
+    font-family: "Hanuman", serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
