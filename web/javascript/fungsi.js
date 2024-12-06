@@ -5,6 +5,18 @@ function konversi () {
     let awal = parseInt(document.getElementById("awal").value);
     let akhir = parseInt(document.getElementById("akhir").value);
     let input = parseFloat(document.getElementById("angka").value);
+
+    //memastikan hanya angka dan koma titik saja yang ditampilkan
+    const inputElement = document.getElementById("angka");
+
+    inputElement.addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9.,]/g, '');
+      
+      const splitValue = this.value.split(/[.,]/);
+      if (splitValue.length > 2) {
+        this.value = splitValue[0] + (this.value.includes('.') ? '.' : ',') + splitValue[1];
+      }
+    });
     
     let hasil;
     let hasilohm = input;
@@ -32,9 +44,10 @@ function konversi () {
     let mega = hasilohm / Math.pow(1000, 2);
     let mikro = hasilohm * Math.pow(1000, 2);
 
+    console.log('ohm:', hasilohm);
     console.log('mega awal:', mega); //debug nilai mega awal
 
-    //Fungsi agar dapat menggunakan koma (,)
+    //Fungsi agar dapat menggunakan koma (,) sebagai titik
     function ubahtitik () {
         inputField.value = inputField.value.replace(",", ".")   
     }
@@ -58,13 +71,15 @@ function konversi () {
         mega = mega.toExponential()
         hasilohm = hasilohm.toExponential()
 
+        console.log('megamega:', mega);
+        
     } else {
         mega = mega.toString()
         mikro = mikro.toString()
         hasilohm = hasilohm.toString()
     }
 
-    console.log('megamega:', mega); //debug nilai mega setelah di ubah ke eksponen    
+    //console.log('mega:', mega); //debug
 
     if (Math.abs(hasil) >= 10000 || Math.abs(hasil) <= 0.0001 || Math.abs(dflt) >= 10000 || Math.abs(dflt) <= 0.0001) {
         hasil = hasil.toExponential();
@@ -73,22 +88,24 @@ function konversi () {
         hasil = hasil.toString();
         dflt = dflt.toString();
     }
-    
+
+    //console.log('ohmpangkat:', hasilohm); //debug hasilohm pangkat
+
     //fungsi untuk menampilakn pangkat
     function format(output) {
         const upscript = ["⁰","¹","²","³","⁴","⁵","⁶","⁷","⁸","⁹"];
 
         console.log('output:', output); //debug output
 
-        let nilai_pangkat, eks, nilai1, pangkat, nilaiwithpangkat;
+        let nilai_pangkat, eks, nilai1, pangkat, nilaiwithpangkat, hasilhasil;
         if (output.includes('e')) {
             nilai_pangkat = output.split('e');
             eks = output.split('e');
             nilai1 = eks[0];
             pangkat = eks[1];
 
-            console.log('nilai:', nilai1); //debug nilai
-            console.log('pangkat:', pangkat); //debug eksponen
+            //console.log('nilai:', nilai1); //debug nilai
+            //console.log('pangkat:', pangkat); //debug eksponen
     
             nilaiwithpangkat = pangkat.split('').map(char => (char === '-' ? '⁻' : upscript[parseInt(char)])).join('');
             return `${nilai1}×10${nilaiwithpangkat}`;
@@ -97,13 +114,51 @@ function konversi () {
             return output.toString();
         }
     }
-    
+
+    //menjalankan fungsi format
+    //supaya hasil tidak 10⁰
+    if (hasilohm.includes('e+0')) {
+        hasilohm;
+    } else {
+        hasilohm = format(hasilohm);
+    }
+
+    if (mega.includes('e+0')) {
+        mega;
+    } else {
+        mega = format(mega);
+    }
+
+    if (mikro.includes('e+0')) {
+        mikro;
+    } else {
+        mikro = format(mikro);
+    }
+
     input = format(input);
     hasil = format(hasil);
-    mega = format(mega);
-    mikro = format(mikro);
-    hasilohm = format(hasilohm);
     dflt = format(dflt);
+
+    if (hasilohm.includes('e+0')) {
+        hasilohm = 1;
+
+    } else {
+        hasilohm;
+    }
+
+    if (mega.includes('e+0')) {
+        mega = 1;
+
+    } else {
+        mega;
+    }
+
+    if (mikro.includes('e+0')) {
+        mikro = 1;
+
+    } else {
+        mikro;
+    }
 
     //Output hasil
     document.getElementById("dflt").textContent = `1 ${st[awal-1]} = ${dflt}  ${st[akhir-1]}`;
