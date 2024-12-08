@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('bg.jpg'); 
+    background-image: url('../../sorce/background/bg.jpg'); 
     background-size: cover; 
     width: 100%;
     height: auto;
